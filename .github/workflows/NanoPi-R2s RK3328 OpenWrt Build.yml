@@ -104,7 +104,7 @@ jobs:
       #make defconfig 的意思是把.config你没写的部分用默认值补全，无效值全部删掉 
       - name: Costom Configure File
         env:
-          CONFIG_FILE: 'my_config'
+          CONFIG_FILE: 'mayh_config'
           CONFIG_FILE_FULL: '.config'
         run: |
           [ -e $CONFIG_FILE_FULL ] && mv $CONFIG_FILE_FULL friendlywrt-rk3328/friendlywrt/.config
